@@ -31,6 +31,7 @@ requirements:
     - pygments  # [py>=27]
     - prompt_toolkit  # [py>=27]
     - futures  # [py<3]
+    - backports.functools-lru-cache  # [py<3]
 
 test:
   imports:
