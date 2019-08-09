@@ -26,7 +26,7 @@ requirements:
     - setuptools
   run:
     - python
-    - pyparsing
+    - pyparsing 2.4.0
     - argparse  # [py<27]
     - pygments  # [py>=27]
     - prompt_toolkit  # [py>=27]
