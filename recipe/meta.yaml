@@ -1,9 +1,9 @@
 {% set name = "coconut" %}
-{% set version = "1.4.3" %}
+{% set version = "1.5.0" %}
 {% set build = 0 %}
 # generate with `openssl sha256 coconut-<version>.tar.gz`
-{% set sha256 = "5053e876388faaa792154d3e86c27dcfa721d48a3611a8d9b94e7567e5652c0b" %}
-{% set pyparsing = "2.4.5" %}
+{% set sha256 = "cb2263fb9e1aa4c6bb7e3051ae26e1444297ecc5e8762c4f8547873b6a0d861d" %}
+{% set pyparsing = "2.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -33,6 +33,7 @@ requirements:
     - prompt_toolkit  # [py>=27]
     - futures  # [py<3]
     - backports.functools-lru-cache  # [py<3]
+    - dataclasses  # [py==36]
 
 test:
   imports:
