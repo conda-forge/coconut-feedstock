@@ -1,8 +1,8 @@
 {% set name = "coconut" %}
-{% set version = "1.5.0" %}
+{% set version = "1.6.0" %}
 {% set build = 0 %}
 # generate with `openssl sha256 coconut-<version>.tar.gz`
-{% set sha256 = "cb2263fb9e1aa4c6bb7e3051ae26e1444297ecc5e8762c4f8547873b6a0d861d" %}
+{% set sha256 = "1f8d3ba15a4335246dc5c2ae3693042b9ce02398455fea5fc6d1d9dcc242c69b" %}
 {% set pyparsing = "2.4.7" %}
 
 package:
@@ -25,6 +25,8 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - wheel
   run:
     - python
     - pyparsing {{ pyparsing }}
@@ -41,8 +43,8 @@ test:
     - coconut.command
     - coconut.compiler
   commands:
-    - coconut --help
-    - coconut-run --help
+    - coconut --version
+    - coconut-run --version
 
 about:
   home: http://coconut-lang.org/
@@ -55,7 +57,7 @@ about:
     to Python. Since all valid Python is valid Coconut, using
     Coconut will only extend and enhance what you're already
     capable of in Python.
-  doc_url: http://coconut.readthedocs.io/en/master/DOCS.html
+  doc_url: http://coconut.readthedocs.io/en/latest/DOCS.html
   dev_url: https://github.com/evhub/coconut
 
 extra:
