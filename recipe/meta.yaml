@@ -1,8 +1,8 @@
 {% set name = "coconut" %}
-{% set version = "1.6.0" %}
-{% set build = 2 %}
+{% set version = "2.0.0" %}
+{% set build = 0 %}
 # generate with `openssl sha256 coconut-<version>.tar.gz`
-{% set sha256 = "1f8d3ba15a4335246dc5c2ae3693042b9ce02398455fea5fc6d1d9dcc242c69b" %}
+{% set sha256 = "a0b05cef7eca57cd21070fa9f3c8a80303ef5c7ef35d7cd7abdaf02f0ea8e5ce" %}
 {% set pyparsing = "2.4.7" %}
 
 package:
