@@ -27,7 +27,7 @@ requirements:
     - pip
     - setuptools
     - wheel
-    - pytest_remotedata
+    - pytest-remotedata
   run:
     - python
     - pyparsing {{ pyparsing }}
