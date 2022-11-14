@@ -1,8 +1,8 @@
 {% set name = "coconut" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 {% set build = 0 %}
 # generate with `openssl sha256 coconut-<version>.tar.gz`
-{% set sha256 = "49d21cc6990456bf4030b55457997a2ce854502712768491fba3ad75eda2f143" %}
+{% set sha256 = "38ce2c38c915e305e7c060a3e902d6ca8e504410182a0d4b50abe4df31aaebe3" %}
 {% set pyparsing = "2.4.7" %}
 
 package:
@@ -27,6 +27,7 @@ requirements:
     - pip
     - setuptools
     - wheel
+    - pytest-remotedata
   run:
     - python
     - pyparsing {{ pyparsing }}
