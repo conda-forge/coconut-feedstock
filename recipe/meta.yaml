@@ -1,8 +1,8 @@
 {% set name = "coconut" %}
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 {% set build = 0 %}
 # generate with `openssl sha256 coconut-<version>.tar.gz`
-{% set sha256 = "3760aaf7f0286282b18f47a663d62be91308aa543e2076a45dd3af3b67ed8dfe" %}
+{% set sha256 = "51934e6f6a70a0346827075c914a2904ef1e2f07f6d9d48f22132319fec442bc" %}
 {% set pyparsing = "2.4.7" %}
 
 package:
@@ -32,11 +32,12 @@ requirements:
     - python
     - pyparsing {{ pyparsing }}
     - argparse  # [py<27]
-    - pygments  # [py>=27]
-    - prompt_toolkit  # [py>=27]
     - psutil  # [py>=27]
     - futures  # [py<3]
     - backports.functools-lru-cache  # [py<3]
+    - prompt_toolkit  # [py>=27]
+    - pygments  # [py>=27]
+    - typing_extensions  # [py>=37]
 
 test:
   imports:
