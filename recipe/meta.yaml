@@ -53,12 +53,9 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'Simple, elegant, Pythonic functional programming.'
+  summary: Simple, elegant, Pythonic functional programming.
   description: >
-    Coconut is a functional programming language that compiles
-    to Python. Since all valid Python is valid Coconut, using
-    Coconut will only extend and enhance what you're already
-    capable of in Python.
+    Coconut is a functional programming language that compiles to Python. Since all valid Python is valid Coconut, using Coconut will only extend and enhance what you're already capable of in Python.
   doc_url: http://coconut.readthedocs.io/en/latest/DOCS.html
   dev_url: https://github.com/evhub/coconut
 
