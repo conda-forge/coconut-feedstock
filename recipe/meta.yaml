@@ -1,8 +1,8 @@
 {% set name = "coconut" %}
-{% set version = "3.0.3" %}
-{% set build = 1 %}
+{% set version = "3.0.4" %}
+{% set build = 0 %}
 # generate with `openssl sha256 coconut-<version>.tar.gz`
-{% set sha256 = "700309695ee247947a3b9b451603dcc36a244d307d04be1841a87afb145810b5" %}
+{% set sha256 = "106f092f91e6cf509415cc627bf52ecda71a065158614cbfe73fa73dceeed98a" %}
 {% set pyparsing = "2.4.7" %}
 
 package:
@@ -55,10 +55,7 @@ about:
   license_file: LICENSE.txt
   summary: 'Simple, elegant, Pythonic functional programming.'
   description: >
-    Coconut is a functional programming language that compiles
-    to Python. Since all valid Python is valid Coconut, using
-    Coconut will only extend and enhance what you're already
-    capable of in Python.
+    Coconut is a functional programming language that compiles to Python. Since all valid Python is valid Coconut, using Coconut will only extend and enhance what you're already capable of in Python.
   doc_url: http://coconut.readthedocs.io/en/latest/DOCS.html
   dev_url: https://github.com/evhub/coconut
 
