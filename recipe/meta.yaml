@@ -20,6 +20,7 @@ build:
     - coconut = coconut.main:main
     - coconut-run = coconut.main:main_run
   script: python -m pip install . --no-deps -vv
+  noarch: python
 
 requirements:
   host:
