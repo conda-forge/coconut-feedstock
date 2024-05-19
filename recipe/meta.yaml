@@ -1,6 +1,6 @@
 {% set name = "coconut" %}
 {% set version = "3.1.0" %}
-{% set build = 0 %}
+{% set build = 1 %}
 # generate with `openssl sha256 coconut-<version>.tar.gz`
 {% set sha256 = "e404e436e347d31e918d9bc870cc2e93a70b813739bd7b6c5d2353bdf3e6c777" %}
 {% set pyparsing = "2.4.7" %}
@@ -20,6 +20,7 @@ build:
     - coconut = coconut.main:main
     - coconut-run = coconut.main:main_run
   script: python -m pip install . --no-deps -vv
+  noarch: generic
 
 requirements:
   host:
