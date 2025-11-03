@@ -1,6 +1,6 @@
 {% set name = "coconut" %}
 {% set version = "3.1.2" %}
-{% set build = 1 %}
+{% set build = 2 %}
 # generate with `openssl sha256 coconut-<version>.tar.gz`
 {% set sha256 = "ef0656ee2df4594007f998f4a9c2a1b9bfbc40541a400cbaa00ccbbac50e5414" %}
 {% set pyparsing = "2.4.7" %}
@@ -11,7 +11,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
